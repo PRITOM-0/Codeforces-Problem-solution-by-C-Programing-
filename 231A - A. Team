@@ -1,0 +1,17 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+ int que,solve=0,a,b,c;
+ cin>>que;
+ while (que--)
+ {
+    cin>>a>>b>>c;
+    if((a+b+c)>1){
+        solve++;
+    }
+ }
+ cout<<solve<<endl;
+  
+ return 0;
+}
