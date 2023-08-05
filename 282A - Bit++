@@ -1,0 +1,20 @@
+#include<iostream>
+#include<string>
+
+using namespace std;
+int main()
+{
+    int n,value=0;
+    string op;
+    cin >> n;
+    while (n--)
+    {
+        cin >> op;
+        if(op=="++X" || op=="X++")value++;
+        if(op=="--X" || op=="X--")value--;
+    }
+    cout << value << endl;
+    
+    
+ return 0;
+}
