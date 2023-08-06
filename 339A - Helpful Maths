@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    string term;
+    char temp;
+    cin >> term;
+    int n=term.size();
+    for(int i=0;i<n;i+=2){
+        for (int j = i+2; j < n; j += 2){
+            if(term[i]>term[j]){
+                temp=term[i];
+                term[i]=term[j];
+                term[j]=temp;
+            }
+        }
+    }
+    cout<<term<<endl;
+ return 0;
+}
