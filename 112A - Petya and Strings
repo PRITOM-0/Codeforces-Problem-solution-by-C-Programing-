@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    string word1,word2;
+    cin>>word1;
+    cin>>word2;
+
+
+
+    long long int sum1=0,sum2=0,n=word1.size(),ans=0;
+    for (long long int i = 0; i < n; i++)
+    {
+        if(word1[i]>='A'&& word1[i]<='Z'){
+            word1[i] = word1[i]-'A'+ 97;
+        }
+        if(word2[i]>='A'&& word2[i]<='Z'){
+            word2[i] = word2[i]-'A'+ 97;
+        }
+        
+        if(word1[i]>word2[i]){
+                cout<<"1\n";
+                return 0;
+        }
+        if(word2[i]>word1[i]){
+                cout<<"-1\n";
+                return 0;
+        }
+        
+
+    }
+    
+    cout<<"0\n";
+    
+ return 0;
+}
